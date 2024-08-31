@@ -1,0 +1,390 @@
+@font-face {
+    font-family: "SFProText";
+    src: url("../assets/fonts/sf/SFProText-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+.banner__form {
+    background-image: url(/assets/img/banner-h.png);
+    background-position: center;
+    background-size: contain;
+    height: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information__text {
+    color: #131515;
+    font-size: 26px;
+    font-family: "SFProText";
+    font-weight: 400;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    margin-top: 12px;
+    cursor: pointer;
+    width: 798px;
+    height: 56px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: white;
+    border-radius: 10px;
+    border: 1px #0297D4 solid;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+
+    color: #131515;
+    font-size: 26px !important;
+    font-family: "SFProText" !important;
+    font-weight: 400;
+
+
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form__city {
+    margin-top: 60px;
+    color: #4A585E;
+    font-size: 22px;
+    font-family: "SFProText";
+    font-weight: 400;
+}
+
+option {
+    color: #131515;
+    font-size: 26px;
+    font-family: "SFProText";
+    font-weight: 400;
+}
+
+select:not([multiple]) {
+    padding-right: 1.2em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) 14px;
+    background-image: url("/assets/icon/d.svg");
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__block {
+    margin-top: 12px;
+    width: 748.4px;
+    padding-top: 11.2px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: white;
+    border-radius: 10px;
+    border: 1px #0297D4 solid;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+    color: #131515;
+    font-size: 26px !important;
+    font-family: "SFProText" !important;
+    font-weight: 400;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+}
+
+.label__margin {
+    margin-top: 28px !important;
+}
+
+.title__text {
+    color: #4A585E;
+    font-size: 26px;
+    font-family: "SFProText";
+    font-weight: 400;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+hr {
+    width: 100%;
+    border: 1px #0297D4 solid
+}
+
+.title {
+    margin-top: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label__margin-two {
+    margin-top: 53px !important;
+}
+
+textarea {
+    margin-top: 12px;
+    height: 321.2px;
+    width: 748.4px;
+    padding-top: 11.2px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: white;
+    border-radius: 10px;
+    border: 1px #0297D4 solid;
+
+    color: #131515;
+    font-size: 26px !important;
+    font-family: "SFProText" !important;
+    font-weight: 400;
+    resize: none;
+}
+
+.price__text {
+    color: #4A585E;
+    font-size: 22px;
+    font-family: "SFProText";
+    font-weight: 400;
+}
+
+.price__label {
+    color: #4A585E;
+    font-size: 22px;
+    font-family: "SFProText";
+    font-weight: 400;
+}
+
+.price__inp {
+    margin-top: 12px;
+    width: 272.4px;
+    height: 31.4px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: white;
+    border-radius: 10px;
+    border: 1px #0297D4 solid;
+
+    color: #131515;
+    font-size: 26px !important;
+    font-family: "SFProText" !important;
+    font-weight: 400;
+}
+
+.price__input {
+    display: flex;
+    flex-direction: column;
+}
+
+.price__flex {
+    display: flex;
+    align-items: center;
+}
+
+.price__check {
+    appearance: none;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #0297D4;
+    transition: 500ms;
+}
+
+.price__check::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 3.5px;
+    top: 5px;
+    background-image: url("../assets/icon/vecto.svg");
+    background-repeat: no-repeat;
+    transition: 500ms;
+}
+
+.price__check:checked::after {
+    width: 30px;
+    height: 30px;
+    transition: 500ms;
+}
+
+.price__target {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.price__margin {
+    margin-left: 12px;
+}
+
+.price__text_marign {
+    margin-top: 12px;
+    margin-left: 16px;
+}
+
+.pice__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__two {
+    max-width: 798px;
+    margin: 0 auto;
+}
+
+.margin {
+    margin-top: 53px;
+}
+
+.margin__two {
+    margin-top: 28px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image {
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+}
+
+.image__input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+
+.input__file-button-text {
+    line-height: 1;
+    margin-top: 1px;
+}
+
+.image__span {
+
+    background: none;
+    -webkit-box-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 335px;
+    height: 56px;
+
+    border-radius: 50px;
+    border: 2px #0297D4 solid;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+
+
+    color: #0297D4;
+    font-size: 20px;
+    font-family: "SFProText";
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+}
+.image__span:hover{
+    color: #077AA9;
+}
+.image__margin {
+    margin-top: 12px;
+}
+
+.contract {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contract__text {
+    padding-left: 12px;
+    color: #4A585E;
+    font-size: 22px;
+    font-family: "SFProText";
+    font-weight: 400;
+}
+
+.price__check_margin {
+    width: 61.8px !important;
+}
+
+.contract__btn {
+    cursor: pointer;
+    margin-top: 24px;
+    width: 335px;
+    height: 56px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background: #0297D4;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+     color: white;
+    font-size: 20px;
+    font-family: "SFProText";
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+.contract__btn:hover {
+    background: #077AA9;
+  
+}
+
+.contract__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

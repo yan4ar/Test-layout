@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>ТУТ ЭВАКУАТОР</title>
+</head>
+
+<body>
+    <a href="#mainPart" class="anchor" >
+        <img src="./assets/icon/up.svg" alt="up">
+    </a>
+    <header id="mainPart">
+        <div class="menu">
+            <a href="/index.html" class="menu__link">
+
+                <img src="./assets/icon/logo.svg" alt="menu__link__logo">
+
+            </a>
+
+            <div class="menu__nav">
+                <ul class="menu__nav__ul">
+                    <li class="nav__li">
+                        <a href="#" class="menu__nav__a menu__nav__a_margin">О ПРОЕКТЕ</a>
+                    </li>
+                    <li class="menu__nav__li">
+                        <a href="#" class="menu__nav__a menu__nav__a_margin_btn">КОНТАКТЫ</a>
+                    </li>
+                    <li class="menu__nav__li">
+                        <button class="menu__nav__btn">
+                            <a href="./form.html" class="menu__nav__a--color">ДОБАВИТЬ ОБЪЯВЛЕНИЕ</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="banner__form">
+            <h2 class="banner__text">Создание объявления</h2>
+        </div>
+
+
+    </header>
+    <main>
+
+        <div class="container">
+
+            <div class="information">
+                <img src="/assets/icon/$.svg" alt="$">
+                <p class="information__text">Заполните все поля формы на размещение своего объявления на сайте. <br>
+                    Размещение объявления платное.Стоимость за одно объявление составляет <strong>990 руб.</strong> <br>
+                    Объявление будет опубликовано на сайте после оплаты и проверки модератором.</p>
+            </div>
+
+            <div class="form">
+
+                <form>
+                    <label class="form__city" for="city">Выберите город</label>
+                    <select name="city" id="city">
+                        <option value="moscow">Москва</option>
+                        <option value="petersburg">Санкт-Петербург</option>
+                        <option value="samara">Самара</option>
+                        <option value="perm">Казань</option>
+                        <option value="novosibirsk">Новосибирск</option>
+                    </select>
+                </form>
+
+                <div class="name">
+                    <label class="form__city label__margin" for="name">Ваше имя</label>
+                    <input class="form__block" type="text" maxlength="40"
+                        onkeyup="this.value = this.value.replace(/[^A-Za-zА-Яа-я\s]/g,'')">
+                </div>
+
+                <div class="phone">
+                    <label class="form__city label__margin" for="number-mask">Номер мобильного телефона</label>
+                    <input class="form__block" id="number-mask" type="text" placeholder="+7 (999) 999 99 99">
+                </div>
+
+                <div class="phone">
+                    <label class="form__city label__margin" for="number_mask_city">Номер городского телефона</label>
+                    <input class="form__block" id="number_mask_city" type="text" placeholder="+7 (999) 999 99 99">
+                </div>
+
+                <div class="phone">
+                    <label class="form__city label__margin" for="email">Ваш email</label>
+                    <input class="form__block" id="email" type="text" placeholder="example@gmail.com">
+                </div>
+
+                <div class="adress">
+                    <label class="form__city label__margin" for="adress">Адрес стоянки эвакуатора</label>
+                    <input class="form__block" id="adress" type="text">
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="title">
+            <hr>
+            <h2 class="title__text">
+                ИНФОРМАЦИЯ
+            </h2>
+            <hr>
+        </div>
+
+        <div class="form">
+
+            <div class="adress">
+                <label class="form__city label__margin-two" for="text">Заголовок объявления</label>
+                <input class="form__block" id="text" type="text" maxlength="50" placeholder="Не более 50 символов">
+            </div>
+
+            <div class="adress">
+                <label class="form__city label__margin" for="description">Заголовок объявления</label>
+                <textarea name="description" id="description" placeholder="Не более 50 символов"
+                    maxlength="50"></textarea>
+            </div>
+
+        </div>
+
+
+        <div class="title">
+            <hr>
+            <h2 class="title__text">
+                ЦЕНЫ
+            </h2>
+            <hr>
+        </div>
+
+        <div class="container__two">
+            <div class="price">
+
+                <div class="price__block margin">
+                    <label class="price__label" for="car">Легковые автомобили</label>
+                    <div class="pice__main">
+                        <div class="price__flex">
+                            <div class="price__input">
+                                <input class="price__inp" type="number" id="car" name="car">
+                            </div>
+                            <p class="price__text price__text_marign">рублей</p>
+                        </div>
+
+                        <div class="price__target">
+                            <input class="price__check" id="checkbox1" name="checkbox1" type="checkbox">
+                            <label class="price__text price__margin" for="checkbox1">Услугу не оказываю</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="price__block margin__two">
+                    <label class="price__label" for="car">Мототехника</label>
+                    <div class="pice__main">
+                        <div class="price__flex">
+                            <div class="price__input">
+                                <input class="price__inp" type="number" id="car" name="car">
+                            </div>
+                            <p class="price__text price__text_marign">рублей</p>
+                        </div>
+
+                        <div class="price__target">
+                            <input class="price__check" id="checkbox1" name="checkbox1" type="checkbox">
+                            <label class="price__text price__margin" for="checkbox1">Услугу не оказываю</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="price__block margin__two">
+                    <label class="price__label" for="car">Внедорожник</label>
+                    <div class="pice__main">
+                        <div class="price__flex">
+                            <div class="price__input">
+                                <input class="price__inp" type="number" id="car" name="car">
+                            </div>
+                            <p class="price__text price__text_marign">рублей</p>
+                        </div>
+
+                        <div class="price__target">
+                            <input class="price__check" id="checkbox1" name="checkbox1" type="checkbox">
+                            <label class="price__text price__margin" for="checkbox1">Услугу не оказываю</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="price__block margin__two">
+                    <label class="price__label" for="car">Микроавтобус</label>
+                    <div class="pice__main">
+                        <div class="price__flex">
+                            <div class="price__input">
+                                <input class="price__inp" type="number" id="car" name="car">
+                            </div>
+                            <p class="price__text price__text_marign">рублей</p>
+                        </div>
+
+                        <div class="price__target">
+                            <input class="price__check" id="checkbox1" name="checkbox1" type="checkbox">
+                            <label class="price__text price__margin" for="checkbox1">Услугу не оказываю</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="price__block margin__two">
+                    <label class="price__label" for="car">Загородный тариф</label>
+                    <div class="pice__main">
+                        <div class="price__flex">
+                            <div class="price__input">
+                                <input class="price__inp" type="number" id="car" name="car">
+                            </div>
+                            <p class="price__text price__text_marign">рублей</p>
+                        </div>
+
+                        <div class="price__target">
+                            <input class="price__check" id="checkbox1" name="checkbox1" type="checkbox">
+                            <label class="price__text price__margin" for="checkbox1">Услугу не оказываю</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <hr>
+            <h2 class="title__text">
+                ФОТО
+            </h2>
+            <hr>
+        </div>
+        <div class="container__two">
+            <div class="image margin label__margin-two ">
+                <label class="price__label " for="img">Прикрепите фотографию к объявлению</label>
+                <input class="image__input " type="file" id="file" name="file" maxlength="25" autocomplete="off"
+                    value="">
+                <label class="image__label image__margin" for="file"> <span class="image__span">Загрузить</span></label>
+                <label class="form__city image__margin" id="file__label"></label>
+            </div>
+
+
+            <div class="contract">
+                <input class="price__check price__check_margin" id="checkbox2" name="checkbox2" type="checkbox">
+                <label class="contract__text" for="checkbox2">Я соглашаюсь с правилами использования сервиса, а также с передачей и
+                    обработкой моих данных в evarus.ru. Я подтверждаю своё совершеннолетие и ответственность за
+                    размещение.</label>
+
+            </div>
+            <div class="contract__flex">
+            <button type="submit" class="contract__btn">ПРОДОЛЖИТЬ</button>
+        </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__flex">
+                <a href="./index.html">
+                <img src="/assets/icon/logo.svg" alt="logo">
+                </a>
+                <ul class="footer__ul">
+                    <li class="footer__li"><a href="" class="footer__li">Вызвать эвакуатор</a></li>
+                    <li class="footer__li footer__li_margin"><a href="./form.html" class="footer__li">Добавить эвакуатор на
+                            сайт</a></li>
+                    <li class="footer__li footer__li_margin"><a href="" class="footer__li">Помощь</a></li>
+                    <li class="footer__li footer__li_margin"><a href="" class="footer__li">Правила оплаты</a></li>
+                    <li class="footer__li footer__li_margin"><a href="" class="footer__li">Защита персональных
+                            данных</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        const number = document.getElementById('number-mask');
+        IMask(
+            number,
+            { mask: '+{7}(000)000 00 00' }
+        );
+        const numberCity = document.getElementById('number_mask_city');
+        IMask(
+            numberCity,
+            { mask: '+{7}(000)000 00 00' }
+        );
+
+        document.getElementById('file').addEventListener('change', function () {
+            let filename = this.files[0].name;
+            document.getElementById('file__label').innerText = filename;
+        });
+    </script>
+</body>
+
+</html>
